@@ -1,13 +1,29 @@
 import React, { Component } from 'react';
 import './Page.css';
+import SynthList from './SynthList.js';
 //import './Page.scss';
+
+const SynthInfo = [
+   { brand: "Korg",
+    name: "Delta",
+    image: "http://www.vintagesynth.com/korg/delta.jpg",
+    year: "1979 - 1984",
+    description: "Korg's Delta is an analog semi-poly synth/string machine, basically a slimmed down version of the Korg Trident. Though limited in the range of sounds compared with other synths of the same genre, the sheer quality of the sound from this little beastie really does make it something of a marvel. It can be found used for cheap and is worth it for the retro synth strings and fat bass synth tones.",
+    ownership: true},
+    {    brand: "Korg",
+    name: "Delta",
+    image: "http://www.vintagesynth.com/korg/delta.jpg",
+    year: "1979 - 1984",
+    description: "Korg's Delta is an analog semi-poly synth/string machine, basically a slimmed down version of the Korg Trident. Though limited in the range of sounds compared with other synths of the same genre, the sheer quality of the sound from this little beastie really does make it something of a marvel. It can be found used for cheap and is worth it for the retro synth strings and fat bass synth tones.",
+    ownership: true}
+];
 
 class Page extends Component {
   render() {
     return (
         <div>
             <div className="container">
-
+                
             <header className="header">
                 <div className="constrain">
                 <img src="https://cdn2.iconfinder.com/data/icons/the-mix-of-electronic-things/64/electro_synthesizer-128.png" alt=""/>    
@@ -31,10 +47,9 @@ class Page extends Component {
                 <div className="constrain">
                 <article className="primary">
                     <img src="http://3.bp.blogspot.com/-uW31Zv-iQuE/UC3dTGb7M-I/AAAAAAAFDzM/-LUpLVGxKzM/s1600/Mantle%2BKorg%2BMagnasonic.jpg" alt="" className="hero"/>
-                   
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda excepturi, incidunt quae optio, accusamus, perferendis ducimus a fugiat molestias laboriosam provident odio architecto officia quos nesciunt. Eveniet nesciunt doloremque facilis.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, doloremque. Quaerat, id minima assumenda ad qui possimus debitis harum, soluta quia ipsum, atque sed adipisci est accusantium cumque quasi! Assumenda.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, doloremque. Quaerat, id minima assumenda ad qui possimus debitis harum, soluta quia ipsum, atque sed adipisci est accusantium cumque quasi! Assumenda.</p>
+                      
+                    <SynthList  data={SynthInfo}/>
+                  
                     
                 </article>
                 <aside className="secondary"></aside>
