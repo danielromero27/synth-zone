@@ -7,7 +7,8 @@ export default ({data = []}) =>(
         {
             data.map((synth) => (<Synth {...synth} />)) 
         }
-         <div className="Synth-Container spacer"></div>
-         <div className="Synth-Container spacer"></div>
+         <div className="spacer"></div>
+         <div className="spacer"></div>
+         <div className="spacer"></div>
     </div>
 );

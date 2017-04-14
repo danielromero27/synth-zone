@@ -72,7 +72,16 @@ const SynthInfo = [
     description: "The Little Phatty boasts a 100 percent analog signal path, 100 user editable presets and a 37-note keyboard. It is a monophonic synth with two oscillators (the Voyager has three osc). Waveform selector is continuously variable between waveforms (tri, saw, square, pulse) and there is oscillator-sync. The filter is the classic Moog ladder design. Two ADSR envelope generators are available for the volume and the filter. And finally a nice LFO with six waveshapes, four destinations and rate/depth controls helps to get things moving. The 'Master' section of the keyboard has controls for Tuning, +/-2 Octave Transpose, Glide, Pitch/Mod wheels and some data entry controls.",
     ownership: true,
     price: 1550,
-    role: "Monophonic"},////
+    role: "Monophonic"},
+    {
+    brand: "Yamaha",
+    name: "DX-7 II",
+    image: "https://www.deepsignalstudios.com/sites/default/files/dx7.png",
+    year: "1986 - 1989",
+    description: "The DX7, a classic FM synth, gets a make-over with three significant updates. The updated models feature a more sturdy chassis with actual push-buttons replacing the cheaper and less reliable membrane buttons of the original DX7. The two real time sliders (that allow for control of user-programmable parameters in real time) are larger than before. Internally, the biggest improvement is the updated 16-bit digital circuitry for cleaner and much less noisy sound quality. Patch memory has also been doubled from 32 to 64 voices. ",
+    ownership: true,
+    price: 350,
+    role: "Polyphonic"},
      {    
     brand: "Casio",
     name: "VL-Tone",
