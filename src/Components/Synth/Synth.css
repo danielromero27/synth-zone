@@ -1,0 +1,38 @@
+.Synth-Container {
+  /* background: #666;*/
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid black;
+  margin: 5px;
+  width: 23%;
+  height: 320px;
+  justify-content: space-between; }
+
+/*.Synth-Container:hover {
+  background: magenta; }*/
+.Image {
+  align-self: center; }
+
+img {
+  width: 100%;
+  /*background-color: purple;*/ }
+
+.TitleInfo {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  border: 1px solid black;
+  align-self: flex-end;
+  /*background-color: blue;*/ }
+
+.Name {
+  /*background-color: green;*/
+  align-self: flex-end; }
+
+.Date {
+  /*background-color: white;*/
+  flex-basis: 50%; }
+
+.Description {
+  display: none; }

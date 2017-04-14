@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box; }
+
+.ListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.spacer {
+  height: 0px;
+  opacity: 0;
+  flex: 1; }

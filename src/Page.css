@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/*image link
+http://3.bp.blogspot.com/-uW31Zv-iQuE/UC3dTGb7M-I/AAAAAAAFDzM/-LUpLVGxKzM/s1600/Mantle+Korg+Magnasonic.jpg
+
+icon
+https://cdn2.iconfinder.com/data/icons/the-mix-of-electronic-things/64/electro_synthesizer-128.png
+http://www.iconninja.com/files/108/519/674/synthesizer-icon.png
+https://d30y9cdsu7xlg0.cloudfront.net/png/19447-200.png
+http://i.imgur.com/9oDIpz8.gif
+https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2169914/300/200/m1/fpnw/wm0/synthesizer_cm-.jpg?1485178476&s=05d7639f635fb6f98ac317b675281c53
+site model
+http://restaurant-reviewer-client.herokuapp.com/#
+*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+.constrain {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  background: #444;
+  color: #fff;
+  position: fixed;
+  width: 100vw; }
+  .header .constrain {
+    display: flex;
+    justify-content: space-between; }
+  .header h1 {
+    margin: 0; }
+  .header .nav-toggle {
+    text-decoration: none;
+    padding: 0.5em;
+    display: inline-block;
+    position: relative;
+    background: #0a3;
+    color: #fff;
+    text-align: left;
+    line-height: 27px;
+    margin-top: 50px; }
+    @media screen and (min-width: 450px) {
+      .header .nav-toggle {
+        display: block;
+        position: inherit;
+        background: none; }
+        .header .nav-toggle .trigger {
+          display: none; } }
+  .header .nav-toggle:hover ul {
+    display: block; }
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    position: absolute;
+    background: #00aa33;
+    z-index: 10;
+    right: 0;
+    min-width: 50vw; }
+    @media screen and (min-width: 450px) {
+      .header ul {
+        display: block;
+        position: inherit;
+        background: none;
+        z-index: 0;
+        right: auto;
+        min-width: none;
+        z-index: 10; } }
+    .header ul li {
+      padding: 1em;
+      text-align: left; }
+      @media screen and (min-width: 450px) {
+        .header ul li {
+          display: inline-block;
+          color: #fff; } }
+
+.main {
+  flex: 1;
+  margin: 150px 2em 0;
+  font-size: 18px;
+  line-height: 1.5em; }
+  .main .ImageContainer {
+    width: 100%;
+    height: 300px; }
+  .main .Image {
+    height: 100%;
+    background: url("http://www.emmerl.de/bos/wp-content/uploads/2016/08/sinus-1200x300.jpg");
+    background-size: cover; }
+  .main .hero {
+    width: calc(100% + 4em);
+    margin-left: -2em;
+    margin-right: -2em;
+    /* @media screen and (min-width:800px){
+      width:33%;
+      float:left;
+      margin:0 2em 1em 0;
+    }*/ }
+    @media screen and (min-width: 550px) {
+      .main .hero {
+        width: 100%;
+        margin: 0; } }
+
+.footer {
+  background: #444;
+  color: #fff;
+  padding: 0 2em; }
+  .footer .constrain {
+    display: flex;
+    justify-content: space-between; }
+  .footer ul {
+    list-style-type: none;
+    padding: 0.5em;
+    text-align: right; }
+  .footer li {
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none; }
