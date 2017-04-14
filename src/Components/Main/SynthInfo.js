@@ -1,5 +1,23 @@
 
+/*korg delta
+roland juno 6
+roland rs-09
+moog little phatty
+yamaha dx7 ii
+korg poly 800 ii
+korg microkorg
+korg ms-20 mini
+casio vl-tone
+casio mt200
+omnichord
+korg voltron
 
+roland tr505
+boss dr rhythm
+
+
+
+*/ 
 const SynthInfo = [
    { brand: "Korg",
     name: "Delta",
@@ -54,10 +72,83 @@ const SynthInfo = [
     description: "The Little Phatty boasts a 100 percent analog signal path, 100 user editable presets and a 37-note keyboard. It is a monophonic synth with two oscillators (the Voyager has three osc). Waveform selector is continuously variable between waveforms (tri, saw, square, pulse) and there is oscillator-sync. The filter is the classic Moog ladder design. Two ADSR envelope generators are available for the volume and the filter. And finally a nice LFO with six waveshapes, four destinations and rate/depth controls helps to get things moving. The 'Master' section of the keyboard has controls for Tuning, +/-2 Octave Transpose, Glide, Pitch/Mod wheels and some data entry controls.",
     ownership: true,
     price: 1550,
-    role: "Monophonic"}
+    role: "Monophonic"},////
+     {    
+    brand: "Casio",
+    name: "VL-Tone",
+    image: "https://cdn.synthlib.com/instruments/images/5_1446043323/casio-vl-tone-angle_medium.png",
+    year: "1979 - 1984",
+    description: "The Casio VL-1 or VL-Tone as it's also called has 29 little calculator-type button keys, five preset and one user memory patches, built-in rhythm machine (waltz, swing, rock, samba, etc.) and a 100-note sequencer.",
+    ownership: true,
+    price: 50,
+    role: "Monophonic"},
+     {    
+    brand: "Casio",
+    name: "SK-1",
+    image: "https://www.xlr8r.com/wp-content/uploads/files/casiosk1_020711.png",
+    year: "1985",
+    description: "This is the sort of sampler-toy you end up belching into with your friends and play burp-songs for a laugh! There are 11 built-in accompaniment-style drum patterns (disco, rock, samba, etc.) which are all embarrassingly fun and totally unusable. The keyboard uses mini plastic keys. It lacks MIDI, lacks effects, edit-ability, memory, and filtering. However there are 13 envelope shapes that can affect your sample or synth sounds somewhat. There is also portamento, vibrato, and chord accompaniment with the chord selector system.",
+    ownership: true,
+    price: 100,
+    role: "Polyphonic"},
+    {    
+    brand: "Suzuki",
+    name: "Omnichord",
+    image: "http://www.suzukimusic.co.uk/omnichord-heaven/images/OM-27_overhead.png",
+    year: "1981",
+    description: "Omnichords often feature preset rhythms with a tempo control, which the player may use as accompaniment. Several models of the Omnichord were produced that added MIDI compatibility, a selection of voices for the touch plate, effects such as vibrato and sustain, and chord memory. Some Omnichord musicians will play the instrument as a keytar, by strapping the instrument on both ends and playing it as if it were an electric guitar.",
+    ownership: true,
+    price: 200,
+    role: "Monophonic"},
+    {
+    brand: "Boss",
+    name: "Dr. Rhythm",
+    image: "http://i.ebayimg.com/00/s/NDgwWDY0MA==/z/LeEAAOSwax5YnbDn/$_1.JPG?set_id=880000500F",
+    year: "1985",
+    description: "The DR-220 derives from the earlier DR-110 (1983) without rotary controls but the same LCD 'matrix' display panel, a much simplified version of that used in devices such as the Roland TR-707.",
+    ownership: true,
+    price: 50,
+    role: "Drum Machine"},
+    {
+    brand: "Roland",
+    name: "TR-505",
+    image: "http://cyberiaplanet.com/Studio/Images/Roland%20TR-505small.png",
+    year: "1986",
+    description: "A cheap (budget) drum machine. It features 16 drum tones which unfortunately, are only mediocre samples. Its memory contains 48 patterns and 6 songs. Unlike its TR cousins it does not have individual drum tone outputs. There is no drum tone editing capability either. It does however feature extensive MIDI implementation, even the pads will transmit MIDI data. The 505 works well with a computer and sequencer or as a stand alone drum machine.",
+    ownership: true,
+    price: 100,
+    role: "Drum Machine"},
+    {
+    brand: "Korg",
+    name: "Monotron",
+    image: "http://cdn.korg.com/us/products/upload/ec52de7763f630daecd83349e3d08ea3_pc.png?Expires=1493875198&Signature=r3F6-wWaUbc6EhCLK2izxKE4G~jTNG5HENqFZ1DdrMvOtEaC7D4HX4mvbwCAJb3k7AMipgyP3WEX5JEVxTu5BX5S5KuQ-~-e~d~6Qxd9rgSD-b6Xknbhg1pMR4Os6rxsGQHo-VPDCDZoNUPfXFG8mhjGLoe2lFmS8w-RPsOf9Y5Y9OCaKHk3wAyYvUpRO1anexClSos8Rg04ecN0spo9DbCN53XxxPVDhTQeAPmvc3CpBVFrImTiY9prFikD-BagDFFrEY2m40rk1IPVLz~M0G5F~aNoU9xAxezWz3tOdeail5cqSmAfjCtWJPGd7P3LXiTpEGWoyqbhkMsK2DTVSw__&Key-Pair-Id=APKAIQGL3XAA7HGZGU6Q",
+    year: "2010 - 2011",
+    description: "The Monotron, released in 2010, is Korg's first foray into the world of analog synthesis in nearly thirty years. Marketed as the 'Go-Anywhere Analog,' the Monotron is roughly the size and shape of a cassette tape (for those of you who know what that is). At its core, the Monotron is a (very) basic, but fun, battery powered monophonic analog synthesizer. It has one voltage-controlled oscillator that produces a saw waveform, one voltage-controlled filter, and one LFO.",
+    ownership: true,
+    price: 70,
+    role: "Monophonic"},
+    {
+    brand: "Roland",
+    name: "RS-09",
+    image: "http://3.bp.blogspot.com/-6ep4bcQk6DQ/VJY7QjwfsnI/AAAAAAAJMQg/2bvnmZRmwNE/s1600/2.jpg",
+    year: "1979 - 1980",
+    description: "The RS-09 is an analog string and organ synthesizer (similar to the Saturn-09 which only produced an organ sound). It's old, it's cheap and they're usually worth finding! The string sound and organ sounds are nice, fatty analog sounds. The organ and string sections can be played simultaneously or individually. An ensemble/chorus effect and external sound input are welcome features. But aside from all this, there isn't much else left to this synth. A simple 2-vco architecture with simple and limited editable parameters, no patch memory and a small keyboard.",
+    ownership: true,
+    price: 200,
+    role: "Polyphonic"}
     ];
     
-    /*,
+    /*
+    ,
+    {
+    brand: "",
+    name: "",
+    image: "",
+    year: "",
+    description: "",
+    ownership: true,
+    price: 100,
+    role: "Polyphonic"},
     {brand: "Korg",
     name: "Delta",
     image: "http://medias.audiofanzine.com/images/normal/korg-delta-1033840.jpg",

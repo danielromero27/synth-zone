@@ -5,9 +5,9 @@ import SynthInfo from './SynthInfo.js';
 
 //import './Page.scss';
 
-const Brands = [{name: "All", key:0},{name:"Boss",key:"1"},{name:"Casio",key:"2"},{name:"Korg",key:"3"},{name:"Moog",key:"4"},{name:"Roland",key:"5"},{name:"Yamaha",key:"6"}];
-const Roles = [{name: "All", key:0},{name:"Monophonic",key:"1"},{name:"Polyphonic",key:"2"},{name:"Drum Machine",key:"3"}];
-const Prices = [{amount: "All", price:10000, key:0},{amount:"Less than $100", price:100,key:"1"},{amount:"Less than $300",price:300,key:"2"},{amount:"Less than $500",price:500,key:"3"},{amount:"Less than $1000", price:1000,key:"4"},{amount:"Less than $1500", price:1500,key:"5"}];
+const Brands = [{name: "All", key:"0"},{name:"Boss",key:"1"},{name:"Casio",key:"2"},{name:"Korg",key:"3"},{name:"Moog",key:"4"},{name:"Roland",key:"5"},{name:"Yamaha",key:"6"}];
+const Roles = [{name: "All", key:"0"},{name:"Monophonic",key:"1"},{name:"Polyphonic",key:"2"},{name:"Drum Machine",key:"3"}];
+const Prices = [{amount: "All", lowPrice: 1, highPrice:15000, key:"0"},{amount:"$1 - $100", lowPrice: 1, highPrice:100,key:"1"},{amount:"$101 - $300",lowPrice: 101, highPrice:300,key:"2"},{amount:"$301 - $500",lowPrice: 301, highPrice:500,key:"3"},{amount:"$501 - $1000",lowPrice: 501, highPrice:1000,key:"4"},{amount:"Above $1000", lowPrice: 1001, highPrice:15000,key:"5"}];
 
 
 class Main extends Component {
@@ -26,7 +26,7 @@ class Main extends Component {
             this.setState(state => ({filteredSynths: SynthInfo}));
         }
         else {
-            this.setState(state => ({filteredSynths: SynthInfo.filter(s => s.brand == name)}));
+            this.setState(state => ({filteredSynths: SynthInfo.filter(s => s.brand === name)}));
         }
 
         
@@ -34,17 +34,18 @@ class Main extends Component {
 
     filterRole(role){
 
-        if(name=="All"){
+        if(role=="All"){
             this.setState(state => ({filteredSynths: SynthInfo}));
         }
         else {
-            this.setState(state => ({filteredSynths: SynthInfo.filter(s => s.role == role)}));
+            this.setState(state => ({filteredSynths: SynthInfo.filter(s => s.role === role)}));
         }
     }
 
-    filterPrice(price){
-
-        this.setState(state => ({filteredSynths: SynthInfo.filter(s => s.price <= price)}));
+    filterPrice(lowPrice, highPrice){
+       
+        this.setState(state => ({filteredSynths: SynthInfo.filter(s =>  s.price >= lowPrice && s.price <= highPrice)}));
+        
     }
 
   render() {
@@ -72,7 +73,7 @@ class Main extends Component {
                             <div className="dropdown">
                                 <button className="dropbtn">Filter Price</button>
                                 <div className="dropdown-content">
-                                    {Prices.map(P => <button className="drop" key={P.key} onClick={()=> this.filterPrice(P.price)} >{P.amount}</button>)}
+                                    {Prices.map(P => <button className="drop" key={P.key} onClick={()=> this.filterPrice(P.lowPrice,P.highPrice)} >{P.amount}</button>)}
                                 </div>
                             </div>
                     </div>
