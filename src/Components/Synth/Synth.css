@@ -1,38 +1,61 @@
 .Synth-Container {
-  /* background: #666;*/
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 5px;
   border: 1px solid black;
   margin: 5px;
   width: 23%;
-  height: 320px;
+  height: 350px;
   justify-content: space-between; }
+
+@media only screen and (max-width: 1200px) {
+  .Synth-Container {
+    width: 30%; } }
 
 /*.Synth-Container:hover {
   background: magenta; }*/
+.Image-Container {
+  display: flex;
+  flex: 1;
+  /*align-self: center;*/
+  /*border: 1px solid yellow;*/
+  align-items: center;
+  /*background: black; */ }
+
 .Image {
-  align-self: center; }
+  width: 100%;
+  /*background-color: red; */ }
 
 img {
   width: 100%;
+  /*border: 1px solid blue;*/
   /*background-color: purple;*/ }
 
 .TitleInfo {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  /*justify-content: space-around;*/
   width: 100%;
-  border: 1px solid black;
-  align-self: flex-end;
+  height: 80px;
+  /*border: 3px solid black;
+  /*align-self: flex-end;*/
+  text-align: center;
   /*background-color: blue;*/ }
 
 .Name {
-  /*background-color: green;*/
-  align-self: flex-end; }
+  width: 100%;
+  /*background-color: gray;*/
+  flex: 1;
+  font-size: 1.5em;
+  font-weight: bold;
+  /*background: radial-gradient(magenta, white, white);
+  /*align-self: flex-end; */ }
 
 .Date {
-  /*background-color: white;*/
-  flex-basis: 50%; }
+  width: 100%;
+  /*background-color: blueviolet;*/
+  /*flex-basis: 80%;*/ }
 
 .Description {
   display: none; }

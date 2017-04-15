@@ -19,15 +19,6 @@ boss dr rhythm
 
 */ 
 const SynthInfo = [
-   { brand: "Korg",
-    name: "Delta",
-    image: "http://medias.audiofanzine.com/images/normal/korg-delta-1033840.jpg",
-    year: "1979 - 1984",
-    description: "Korg's Delta is an analog semi-poly synth/string machine, basically a slimmed down version of the Korg Trident. Though limited in the range of sounds compared with other synths of the same genre, the sheer quality of the sound from this little beastie really does make it something of a marvel. It can be found used for cheap and is worth it for the retro synth strings and fat bass synth tones.",
-    ownership: true,
-    price: 350,
-    role: "Polyphonic"
-    },
     {    
     brand: "Roland",
     name: "Juno 6",
@@ -118,6 +109,15 @@ const SynthInfo = [
     ownership: true,
     price: 50,
     role: "Drum Machine"},
+    { brand: "Korg",
+    name: "Delta",
+    image: "http://medias.audiofanzine.com/images/normal/korg-delta-1033840.jpg",
+    year: "1979 - 1984",
+    description: "Korg's Delta is an analog semi-poly synth/string machine, basically a slimmed down version of the Korg Trident. Though limited in the range of sounds compared with other synths of the same genre, the sheer quality of the sound from this little beastie really does make it something of a marvel. It can be found used for cheap and is worth it for the retro synth strings and fat bass synth tones.",
+    ownership: true,
+    price: 350,
+    role: "Polyphonic"
+    },
     {
     brand: "Roland",
     name: "TR-505",

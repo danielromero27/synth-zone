@@ -1,13 +1,10 @@
-* {
-  box-sizing: border-box; }
-
 .ListContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  padding: 5px; }
 
-.spacer {
-  height: 0px;
-  opacity: 0;
-  flex: 1; }
+#spacer {
+  height: 0%;
+  opacity: 0; }

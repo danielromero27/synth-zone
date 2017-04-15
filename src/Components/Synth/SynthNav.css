@@ -1,0 +1,9 @@
+.Synth-Nav-Container{
+    display:flex;
+    margin-top: 5px;
+}
+.Synth-Nav-btn {
+    flex:1;
+    cursor: pointer;
+    font-size: 1.2em;
+}

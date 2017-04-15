@@ -1,22 +1,28 @@
 import React from 'react';
 import './Synth.css';
+import SynthNav from './SynthNav.js';
 
 export default (props) =>(
         <div className="Synth-Container">
-            <div className="Image">
-                <img src={props.image} alt=""/>
+            <div className="Image-Container">
+                <div className="Image">
+                    <img src={props.image} alt=""/>
+                </div>
             </div>
             <div className="TitleInfo">
                 <div className="Name">
-                    <h3>{props.brand} {props.name}</h3>
+                    {props.brand} {props.name}
                 </div>
                 <div className="Date">
-                    <h5> Date made</h5>
-                    <h5> {props.year} </h5>
+                    Date made {props.year}
                 </div>
+                
+            </div>
+            <div>
+                <SynthNav />
             </div>
             <div className="Description">
-                    <p>{props.description}</p>
+                <p>{props.description}</p>
             </div>
         </div>
         );
