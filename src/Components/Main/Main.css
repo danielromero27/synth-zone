@@ -1,3 +1,6 @@
+.MainContainer {
+  box-sizing: border-box; }
+
 .PlayZoneContainer {
   position: fixed;
   background-color: black;
@@ -21,7 +24,7 @@
   /*background-size: cover;*/ }
 
 .Nav {
-  background: white;
+  /* background: white;*/
   height: 80px;
   width: 100%;
   position: fixed;
@@ -128,8 +131,28 @@
     margin-top: 260px; } }
 
 @media only screen and (max-width: 670px) {
+  .DropZone {
+    display: none;
+    width: 0%; }
+  .FilterNav {
+    width: 100%; }
   /*change nav buttons to menu*/ }
 
 @media only screen and (max-width: 600px) {
   .PlayZone {
-    font-size: 66px; } }
+    font-size: 66px; }
+  .PlayZoneContainer {
+    height: 100px; }
+  .main {
+    margin-top: 200px; } }
+
+@media only screen and (max-width: 350px) {
+  .PlayZone {
+    font-size: 40px; }
+  .PlayZoneContainer {
+    height: 80px; }
+  .main {
+    margin-top: 160px; }
+  .dropbtn {
+    padding: 10px;
+    font-size: 14px; } }

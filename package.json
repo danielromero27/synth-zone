@@ -7,6 +7,7 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
     "react-scripts": "0.9.5"
@@ -18,6 +19,9 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "https://danielromero27.github.io/synth-zone"
 }
