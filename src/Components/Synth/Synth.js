@@ -19,7 +19,8 @@ export default (props) =>(
                 
             </div>
             <div>
-                <SynthNav />
+                <SynthNav brand={props.brand} name={props.name} year={props.year} 
+                price={props.price} image={props.image} description={props.description}/>
             </div>
             <div className="Description">
                 <p>{props.description}</p>

@@ -13,6 +13,19 @@
   .Synth-Container {
     width: 30%; } }
 
+@media only screen and (max-width: 990px) {
+  .Synth-Container {
+    width: 42%; } }
+
+@media only screen and (max-width: 740px) {
+  .Synth-Container {
+    width: 45%; } }
+
+@media only screen and (max-width: 600px) {
+  .Synth-Container {
+    width: 90%;
+    height: 400px; } }
+
 /*.Synth-Container:hover {
   background: magenta; }*/
 .Image-Container {
@@ -21,6 +34,7 @@
   /*align-self: center;*/
   /*border: 1px solid yellow;*/
   align-items: center;
+  overflow: hidden;
   /*background: black; */ }
 
 .Image {

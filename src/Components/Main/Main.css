@@ -46,9 +46,13 @@
 
 .SynthContainer {
   width: 90%;
-  background-color: magenta;
+  background: linear-gradient(magenta, #706);
   border: 3px solid black;
   align-items: baseline; }
+
+@media only screen and (max-width: 1000px) {
+  .SynthContainer {
+    width: 100%; } }
 
 .FilterNav {
   width: 50%;
@@ -116,3 +120,16 @@
 .Select {
   height: 30px;
   width: 100px; }
+
+@media only screen and (max-width: 952px) {
+  .PlayZone {
+    font-size: 106px; }
+  .main {
+    margin-top: 260px; } }
+
+@media only screen and (max-width: 670px) {
+  /*change nav buttons to menu*/ }
+
+@media only screen and (max-width: 600px) {
+  .PlayZone {
+    font-size: 66px; } }
